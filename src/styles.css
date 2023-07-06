@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
+
+@font-face {
+  font-family: clockicons;
+  src: url(/font/clockicons/clockicons.eot#iefix) format('embedded-opentype'), url(/font/clockicons/clockicons.woff2) format('woff2'), url(/font/clockicons/clockicons.woff) format('woff'), url(/font/clockicons/clockicons.ttf) format('truetype'), url(/font/clockicons/clockicons.svg) format('svg');
+  font-weight: 400;
+  font-style: normal
+}
+
+* {
+  font-family: Roboto, sans-serif;
+  color: #d4b9b9;
+}
+
+body {
+  background: #192831;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  /* text-transform: uppercase; */
+}
+
+#app {
+  padding: 25px;
+}
+
+.header {
+  flex-direction: column-reverse;
+}
+
+#currentTime {
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+#fullDate {
+  text-align: center;
+}
+
+.countdown-container {
+  --tw-numeric-spacing: tabular-nums;
+  align-items: center;
+  display: grid;
+  font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
+  gap: 1.5rem;
+  grid-auto-columns: max-content;
+  grid-auto-flow: column;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.flex-col {
+  padding: 1rem;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+.flex {
+  display: flex;
+}
+
+#days, #hours, #minutes, #seconds{
+  font-family: clockicons, sans-serif;
+  font-size: 8rem;
+}
+
+.img-container {
+  text-align: center;
+  display: block;
+}
