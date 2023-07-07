@@ -1,34 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codar.me - Vanilla ToDo</title>
+    <title>Countdown</title>
     <link href="src/styles.css" rel="stylesheet">
 </head>
 
 <body>
     <div id="app">
-        <!-- <h1>Olá!</h1> -->
+        <h1>...#...</h1>
         <!-- <p id="currentTime">15:00</p> -->
         <!-- <p id="fullDate">Hoje é <span id="currentDate">Segunda 4, Janeiro 2023</span>.</p> -->
-        <p id="fullDate">Ele volta na <span id="targetDate">Segunda 44, Janeiro 2023</span></p>
+        <!-- <p id="fullDate">Ele volta na <span id="targetDate">Segunda 44, Janeiro 2023</span></p> -->
         <!-- <p id="fullDate"><span id="contagem">2 Dias, 5 horas, 10 minutos e 5 segundos</span></p> -->
+    <div class="countdown-img">
         <span class="img-container">
-            <img src="src/loco.png" alt="um loco">
+            <img src="src/loco.png" alt="Um loco">
         </span>
     </div>
     <div class="countdown-container">
-        <div class="flex flex-col"><span id="days" class="countdown-value">00</span><span
-                class="countdown-heading">Dias</span></div>
-        <div class="flex flex-col"><span id="hours" class="countdown-value">03</span><span
-                class="countdown-heading">Horas</span></div>
-        <div class="flex flex-col"><span id="minutes" class="countdown-value">35</span><span
-                class="countdown-heading">Minutos</span></div>
-        <div class="flex flex-col"><span id="seconds" class="countdown-value">16</span><span
-                class="countdown-heading">Segundos</span></div>
+        <div class="flex flex-col">
+            <span id="days" class="countdown-value">00</span>
+            <span class="countdown-heading">Dias</span>
+        </div>
+        <div class="flex flex-col">
+            <span id="hours" class="countdown-value">03</span>
+            <span class="countdown-heading">Horas</span>
+        </div>
+        <div class="flex flex-col">
+            <span id="minutes" class="countdown-value">35</span>
+            <span class="countdown-heading">Minutos</span>
+        </div>
+        <div class="flex flex-col">
+            <span id="seconds" class="countdown-value">16</span>
+            <span class="countdown-heading">Segundos</span>
+        </div>
     </div>
+</div>
     <script src="src/index.js"></script>
 </body>
 

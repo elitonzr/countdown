@@ -68,7 +68,7 @@ const updateDate = () => {
     // currentTime.innerHTML = `${currentHour}:${currentMinute}`;
 
     // Atualização da Data "Hoje é quarta, dia 04 de Janeiro de 2023"
-    targetDate.innerHTML = `${DAYS[targetDay]}, dia ${targetNumber} de ${MONTHS[targetMonth]} de ${targetYear}`;
+    //targetDate.innerHTML = `${DAYS[targetDay]}, dia ${targetNumber} de ${MONTHS[targetMonth]} de ${targetYear}`;
     //contagem.innerHTML = `${d} dias, ${H}:${M}:${S}`
     days.innerHTML = `${d}`
     hours.innerHTML = `${H}`
