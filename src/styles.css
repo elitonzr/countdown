@@ -14,9 +14,10 @@ body {
   flex-direction: column;
 }
 
-.countdown-img {
+.countdown-img {  
   margin-bottom: 0;
   padding: 0;
+  text-align: center;
   /* border: 5px solid #fff; */
 }
 
@@ -61,7 +62,7 @@ body {
     justify-content: space-around;
     /* flex-direction: column; */
     height: 80px;
-    width: 255px;
+    width: 300px;
     background: transparent;
     border-radius: 3px;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
@@ -88,5 +89,12 @@ body {
 
   .timer span.countdown {
     font-size: 5px;
+  }
+
+  .countdown-img img{
+    max-width:300px;
+    max-height:400px;
+    width: auto;
+    height: auto;
   }
 }
