@@ -11,19 +11,16 @@ body {
   background: linear-gradient(120deg, #ffe53bd8, #ff2525da);
   display: flex;
   align-items: center;
-  /* justify-content: center; */
-  /* flex-wrap: wrap-reverse; */
   flex-direction: column;
 }
 
-.countdown-img{
+.countdown-img {
   margin-bottom: 0;
   padding: 0;
   /* border: 5px solid #fff; */
 }
 
 .timer {
-
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -55,4 +52,41 @@ body {
 
 .timer span.countdown {
   font-size: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .timer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* flex-direction: column; */
+    height: 80px;
+    width: 255px;
+    background: transparent;
+    border-radius: 3px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
+  }
+
+  .timer div {
+    height: 70px;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: rgb(5, 5, 5, .9);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+    border-radius: 7px;
+    letter-spacing: 3px;
+  }
+
+  .timer span {
+    font-weight: bolder;
+    font-size: 30px;
+  }
+
+  .timer span.countdown {
+    font-size: 5px;
+  }
 }
