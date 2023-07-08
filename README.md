@@ -1,9 +1,5 @@
-# Manipulando a DOM com Vanilla JS
+# Contagem regressiva
 
-[Video no Youtube](https://youtu.be/aVB67Y31E4A)
+Página simples construída em HTML, CSS e Javascript que realiza uma contagem regressiva entre a data atual até uma data alvo que foi definida no código Javascript.
 
-Hoje em dia é muito fácil fazer um front-end com os frameworks e bibliotecas disponíveis, mas é muito importante conhecer os fundamentos da linguagem para só depois partir pra algum framework ou abstração. Nesse video, eu mostro o básico de manipulação de DOM com javascript puro para criação de uma ToDo List.
-
-Código do video no Codesandbox:
-
-[Código Codesandbox](https://bit.ly/vanilla-todo)
+![Alt text](img/PrintScreen.png)
