@@ -1,101 +1,58 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
 
 * {
   margin: 0;
   padding: 0;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  color: #d4b9b9;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
-  margin: 0;
-  padding: 0rem 1rem;
-  background: #192831;
-  /* border: 2px solid #ff0000; */
-}
-
-h1,
-h2 {
-  /* text-transform: uppercase; */
-}
-
-#app {
-  align-items: center;
-  text-align: center;
-  padding: 5px;
-}
-
-@media screen and (max-width: 500px) {
-  h1 {
-    display: none;
-  }
-
-  * {
-    margin: 0;
-    padding: 0;
-    font-family: Roboto, sans-serif;
-    font-style: normal;
-    font-size: 0.6rem;
-    color: #d4b9b9;
-  }
-}
-
-/* #currentTime {
-  font-size: 1.5rem;
-  margin-bottom: 0.5em;
-  text-align: center;
-}
-
-#fullDate {
-  text-align: center;
-} */
-
-.countdown-img {
+  height: 100vh;
+  background: linear-gradient(120deg, #ffe53bd8, #ff2525da);
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-
-
-.countdown-container {
-  margin: 0;
-  padding: 0;
-  align-items: center;
-  display: flex;
-  gap: 1rem;
-  grid-auto-columns: max-content;
-  grid-auto-flow: column;
-  justify-content: center;
-  margin-bottom: 1.5rem;
-  margin-top: 0.5rem;
-  /* border: 2px solid #314903; */
-  border-radius: 15px;
-}
-
-.flex-col {
-  padding: 1.5rem;
+  /* justify-content: center; */
+  /* flex-wrap: wrap-reverse; */
   flex-direction: column;
-  border: 2px solid #ccc;
-  border-radius: 15px;
 }
 
-.flex {
+.countdown-img{
+  margin-bottom: 0;
+  padding: 0;
+  /* border: 5px solid #fff; */
+}
+
+.timer {
+
   display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 200px;
+  width: 750px;
+  background: transparent;
+  border-radius: 3px;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
 }
 
-.countdown-heading {
-  margin: 0;
-  padding: 0;
-  font-size: 1.5rem;
-  text-align: center;
+.timer div {
+  height: 170px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: rgb(5, 5, 5, .9);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+  border-radius: 7px;
+  letter-spacing: 3px;
 }
 
-.countdown-value {
-  margin: 0;
-  padding: 0;
-  font-size: 5rem;
-  text-align: center;
-  /* border: 2px solid #b3ff00; */
+.timer span {
+  font-weight: bolder;
+  font-size: 60px;
+}
+
+.timer span.countdown {
+  font-size: 10px;
 }
