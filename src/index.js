@@ -1,4 +1,7 @@
 const updateDate = () => {
+    const img = document.querySelector('.box-imagem');
+
+
     let date_ini = new Date(); // Data de hoje.
     let date_end = new Date("2023-08-02T07:00:00-03:00"); // Data alvo.
     let milissegundo = (date_end.getTime() - date_ini.getTime()) / 1000;
@@ -20,6 +23,14 @@ const updateDate = () => {
     setTimeout(() => {
         updateDate();
     }, 1000);
+
+    if ((segundos % 2) > 0) {
+        if (img.classList.contains('inverter')) {
+            img.classList.remove('inverter');
+        } else {
+            img.classList.add('inverter');
+        }
+    }
 };
 
 // Acrescenta zero na frente de numeros menores que 9.
