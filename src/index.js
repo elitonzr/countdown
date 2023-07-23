@@ -1,14 +1,13 @@
 const updateDate = () => {
     const img = document.querySelector('.box-imagem');
 
-
     let date_ini = new Date(); // Data de hoje.
     let date_end = new Date("2023-08-02T07:00:00-03:00"); // Data alvo.
     let milissegundo = (date_end.getTime() - date_ini.getTime()) / 1000;
     let segundos = formatDigit(Math.floor(milissegundo % 60));
     let minutos = formatDigit(Math.floor((milissegundo / 60) % 60));
     let horas = formatDigit(Math.floor((milissegundo / 3600) % 24));
-    let dias = Math.floor(milissegundo / (60 * 60 * 24));
+    let dias = formatDigit(Math.floor(milissegundo / (60 * 60 * 24)));
 
     // Segundos
     seconds.innerHTML = `${segundos}`;
