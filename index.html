@@ -11,13 +11,11 @@
 </head>
 
 <body>
-    <div class="background">
+    <div class="background theme1">
         <div class="box-principal">
             <h1>ELE VOLTARA!</h1>
             <div class="box-imagem">
                 <span id="click"><img src="img/img.png" /></span>
-
-                <!-- <img src="img/img.png" alt="Um loco"> -->
             </div>
             <div class="timer">
                 <div class="div-countdown">
@@ -41,8 +39,16 @@
     </div>
 
     <script src="src/index.js"></script>
+    <script type="text/javascript" src="src/vanilla-tilt.js"></script>
+    <script>
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll(".box-principal")), {
+            max: 25,
+            speed: 400,
+            glare: true,
+        };
+    </script>
     <script src="src/theme.js"></script>
-
 </body>
 
 </html>
