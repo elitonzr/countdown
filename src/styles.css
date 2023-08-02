@@ -63,7 +63,7 @@ body {
 
 .theme1 {
   /* background-image: url("https://source.unsplash.com/1920x1080/"); */
-  background-image: url("/img/Background-1.jpg");
+  background-image: url("https://github.com/elitonzr/countdown/blob/main/img/Background-1.jpg?raw=true");
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -72,8 +72,7 @@ body {
 }
 
 .theme2 {
-  /* background-image: url("https://source.unsplash.com/1920x1080/"); */
-  background-image: url("img/Background-2.jpg");
+  background-image: url("https://github.com/elitonzr/countdown/blob/main/img/Background-2.jpg?raw=true");
 
   /* Center and scale the image nicely */
   background-position: center;
