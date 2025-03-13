@@ -3,7 +3,7 @@ const updateDate = () => {
     const txtElement = document.getElementById('text');
 
     let date_ini = new Date(); // Data de hoje.
-    let date_end = new Date("2024-07-30T07:00:00-03:00"); // Data alvo.
+    let date_end = new Date("2025-03-14T07:00:00-03:00"); // Data alvo.
     let milissegundo = (date_end.getTime() - date_ini.getTime()) / 1000;
     let segundos = formatDigit(Math.floor(milissegundo % 60));
     let minutos = formatDigit(Math.floor((milissegundo / 60) % 60));
